@@ -108,13 +108,13 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = "pt-BR"
 
-TIME_ZONE = "UTC"
+TIME_ZONE = "America/Sao_Paulo"
 
 USE_I18N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
@@ -141,5 +141,6 @@ MESSAGE_TAGS = {
     constants.WARNING: 'alert-warning',
 }
 
-SESSION_COOKIE_AGE = 60 * 60 * 24 * 7
-SESSION_SAVE_EVERY_REQUEST = False
+# Auth
+
+LOGIN_URL = '/usuarios/login/'
